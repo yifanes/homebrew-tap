@@ -5,21 +5,21 @@
 class Miniclawd < Formula
   desc "Multi-platform AI chat bot"
   homepage "https://github.com/yifanes/miniclawd"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yifanes/miniclawd/releases/download/v0.1.2/miniclawd_0.1.2_darwin_amd64.tar.gz"
-      sha256 "29cd82075f35da88f80d364759ef93ca4f5e0a7eaaeb32d6301a7d663b117abf"
+      url "https://github.com/yifanes/miniclawd/releases/download/v0.1.3/miniclawd_0.1.3_darwin_amd64.tar.gz"
+      sha256 "9eee4e1d85b7c54ece8a7a429d78b0e85d8f26793ec229e275eb6fb2be8f4abc"
 
       def install
         bin.install "miniclawd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yifanes/miniclawd/releases/download/v0.1.2/miniclawd_0.1.2_darwin_arm64.tar.gz"
-      sha256 "b2d7a6cef5731bd1250deed5e81356d2cf4475a0ec030d07bf35b3affbbdf3e2"
+      url "https://github.com/yifanes/miniclawd/releases/download/v0.1.3/miniclawd_0.1.3_darwin_arm64.tar.gz"
+      sha256 "c5cadd4ff5141b59998d7cce8b04f1976d260d8613d13753506d86281e0d28f7"
 
       def install
         bin.install "miniclawd"
@@ -29,15 +29,15 @@ class Miniclawd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yifanes/miniclawd/releases/download/v0.1.2/miniclawd_0.1.2_linux_amd64.tar.gz"
-      sha256 "059961eaffdd4144c42bd8fcd5eb8951ebdd2df570b375ba33184265b38bb47d"
+      url "https://github.com/yifanes/miniclawd/releases/download/v0.1.3/miniclawd_0.1.3_linux_amd64.tar.gz"
+      sha256 "e1b73f5f1a134b5ce1bf12c578ec80fbd078239c1c3db282bbf9684dcc653ce4"
       def install
         bin.install "miniclawd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yifanes/miniclawd/releases/download/v0.1.2/miniclawd_0.1.2_linux_arm64.tar.gz"
-      sha256 "35fb45d8cbc7566b5784e90e29ee369dbd47c620454964340c2c23a45c03ac66"
+      url "https://github.com/yifanes/miniclawd/releases/download/v0.1.3/miniclawd_0.1.3_linux_arm64.tar.gz"
+      sha256 "88c53343afde20ae3ccf2f8342b42b03e99a4a551e248c324ce8f01138e2d0c7"
       def install
         bin.install "miniclawd"
       end
