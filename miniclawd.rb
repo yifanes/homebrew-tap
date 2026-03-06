@@ -5,21 +5,21 @@
 class Miniclawd < Formula
   desc "Multi-platform AI chat bot"
   homepage "https://github.com/yifanes/miniclawd"
-  version "0.1.5"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yifanes/miniclawd/releases/download/v0.1.5/miniclawd_0.1.5_darwin_amd64.tar.gz"
-      sha256 "9e9809357fc72947e4d3c88966453a528ee341647f72cfd29a71ea7b5233d2c2"
+      url "https://github.com/yifanes/miniclawd/releases/download/v0.2.0/miniclawd_0.2.0_darwin_amd64.tar.gz"
+      sha256 "7eac8400317c2f0122107eeeac2b18959c4ff719f5e70e6eb202c90418645ecf"
 
       define_method(:install) do
         bin.install "miniclawd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yifanes/miniclawd/releases/download/v0.1.5/miniclawd_0.1.5_darwin_arm64.tar.gz"
-      sha256 "bcd2f24eb90d466a433e458ac595f7aed1e883562b5f055f4b1b8d68bc159ea4"
+      url "https://github.com/yifanes/miniclawd/releases/download/v0.2.0/miniclawd_0.2.0_darwin_arm64.tar.gz"
+      sha256 "58eac39b3dc1ae94338fa674a8a62c095a67ded33cfe48347de9cc57eeabbb87"
 
       define_method(:install) do
         bin.install "miniclawd"
@@ -29,15 +29,15 @@ class Miniclawd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yifanes/miniclawd/releases/download/v0.1.5/miniclawd_0.1.5_linux_amd64.tar.gz"
-      sha256 "a8c18dc2bffe303e1c0aa98e0cb226d04e88011aa0416acf2683f0f81a930b2c"
+      url "https://github.com/yifanes/miniclawd/releases/download/v0.2.0/miniclawd_0.2.0_linux_amd64.tar.gz"
+      sha256 "294f5698b20ee36542c518784d2085890c4c58ff9c50d74c741b9d336d78291b"
       define_method(:install) do
         bin.install "miniclawd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yifanes/miniclawd/releases/download/v0.1.5/miniclawd_0.1.5_linux_arm64.tar.gz"
-      sha256 "9ade5aa89c065542a1bd6cb11f67f5790b0a5bb4d4edda456e4e863cb71dc09c"
+      url "https://github.com/yifanes/miniclawd/releases/download/v0.2.0/miniclawd_0.2.0_linux_arm64.tar.gz"
+      sha256 "98bedfb3dfc36e0623aa9e97d18a8c1e8a2fc68959b02e09418899eb15839c0e"
       define_method(:install) do
         bin.install "miniclawd"
       end
